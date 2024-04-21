@@ -12,6 +12,9 @@ export const Chat = sequelize.define(
         text: {
             type: DataTypes.STRING,
         },
+        ofBot: {
+            type: DataTypes.BOOLEAN,
+        },
     },
     {
         timestamps: true,

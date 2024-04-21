@@ -1,13 +1,12 @@
 import { Router } from "express";
-import {  } from "../controllers/conversation.controller.js";
+import { createConversation, removeConversation, changeNameConversation, getConversationByUserId } from "../controllers/conversation.controller.js";
 
 const router = Router();
 
-// router.post("/create", createAccount);
-// router.delete("/remove/:id", removeAccount);
-// router.patch("/change-name/:id", changeNameAccount);
-// router.post("/add", addAccount);
-// router.get("/", getAccountOfUser);
+router.post("/create", createConversation);
+router.delete("/remove/:id", removeConversation);
+router.patch("/edit", changeNameConversation);
+router.get("/:userId", getConversationByUserId);
 
 
 export default router;

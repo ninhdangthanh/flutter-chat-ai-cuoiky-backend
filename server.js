@@ -2,16 +2,15 @@ import app from "./app.js";
 import { sequelize } from "./db/database.js";
 import { Chat } from "./models/Chat.js";
 
-// import { Conversation } from "./models/Conversation.js";
 import { User } from './models/User.js'
 
 
 async function db_connect() {
     try {
         await sequelize.authenticate()
-        await User.sync({ force: true }) 
-        await Conversation.sync({ force: true })
-        await Chat.sync({ force: true })
+        // await User.sync({ force: true }) 
+        // await Conversation.sync({ force: true })
+        // await Chat.sync({ force: true })
     } catch (error) {
         console.error('Unable to connect to the database:', error);
     }

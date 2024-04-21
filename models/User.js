@@ -14,6 +14,9 @@ export const User = sequelize.define(
             type: DataTypes.STRING,
             unique: true, 
         },
+        latestConversation: {
+            type: DataTypes.INTEGER,
+        }
     },
     {
         timestamps: true,
