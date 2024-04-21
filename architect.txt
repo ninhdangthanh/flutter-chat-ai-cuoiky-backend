@@ -1,0 +1,22 @@
+-- get all converstation of chat
+-- get all message of converstation
+-- create converstation -- theo id
+-- remove converstation
+-- edit converstation name
+
+table::
+
+user 
+-id
+-email
+
+converstation
+-id
+-name
+-user_id
+
+chat
+-id
+-text
+-conversation_id
+
